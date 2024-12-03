@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <title><%= title %></title>
+    <body>
+        <h1><%= title %></h1>
+        <ul><% searchUsers.forEach((user) => { %>
+            <li>Name: <%= user.firstName %> <%= user.lastName %> Email: <%= user.email %> Age: <%= user.age %> Bio: <%= user.bio %></li>
+        <% }) %>
+        </ul>
+        <a href="../">Back to home</a>
+    </body>
+</html>
